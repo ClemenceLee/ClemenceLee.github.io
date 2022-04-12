@@ -243,3 +243,17 @@ h3{
     text-shadow: 2px 2px grey;
     text-decoration: none;
 }
+
+
+/* media */
+@media screen and (max-width: 960px){
+    .header_curtain{
+        display: none;
+    }
+    .jelly{
+        display: none;
+    }
+    .container_2{
+        width: 30%;
+    }
+}
