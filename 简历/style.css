@@ -74,7 +74,9 @@ h3{
     font-size: 35px;
     z-index: 99;
     opacity: 100%;
+    text-shadow: 1px 1px lightslategray;
 }
+
 
 /* title jf */
 #title_jf{
@@ -205,4 +207,39 @@ h3{
 /* 调整图标大小 */
 .title_4 span{
     font-size: 30px;
+}
+.box_1{
+    width: 250px;
+    height: 70px;
+    border: 1px solid white;
+    margin: 30px;
+    background: -webkit-linear-gradient(left top, rgb(118, 118, 176), rgb(129, 101, 129));
+    border-radius: 30px;
+}
+.box_1:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0;
+}
+.box_2{
+    width: 250px;
+    height: 70px;
+    border: 1px solid white;
+    margin: 30px;
+    background: -webkit-linear-gradient(left top, rgb(118, 118, 176), rgb(129, 101, 129));
+    border-radius: 30px;
+}
+.box_2:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0;
+}
+.box_1 > h3{
+    margin-top: 15px;
+}
+.box_2 > h3{
+    margin-top: 15px;
+}
+.nr_4 a{
+    color: rgb(100, 54, 100);
+    text-shadow: 2px 2px grey;
+    text-decoration: none;
 }
