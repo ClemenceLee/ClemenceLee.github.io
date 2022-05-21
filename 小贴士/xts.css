@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* 去除横向滚动轴 */
+    width: 100vw;
+    overflow-x: hidden;
+    background: rgb(220, 199, 217);
+}
+
+html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 为了让box$左右居中 */
+    /* 但此时是横向的box相连 */
+    flex-direction: column;
+    /* 改为竖直排列 */
+    margin-bottom: 30px;
+}
+
+.box{
+    width: 1200px;
+    height: 300px;
+    background: #6277a6;
+    border-radius: 8px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: #ffffff;
+    font-family: 'KaiTi';
+    transition: transform 1s ease;
+}
+
+.box:nth-child(even){
+    transform: translateX(-200%);
+    /* X轴上平移 */
+}
+
+.box:nth-child(odd){
+    transform: translateX(200%);
+}
+
+.box.show-center{
+    transform: translateX(0);
+}
+
+#title{
+    width: 380px;
+    height: 100px;
+    font-size: 50px;
+    transform: translateX(0);
+    /* 第一个box保持在原点 */
+}
+
+#con2{
+    transform: translateX(0);
+    /* 第二个box保持在原点 */
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.t2{
+    width: 200px;
+    font-size: 40px;
+    margin: 80px;
+}
+.c2{
+    font-size: 30px;
+    margin: 30px;
+}
+
+
+#con3{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.t3{
+    width: 100px;
+    font-size: 40px;
+    margin: 80px;
+}
+.c3{
+    font-size: 30px;
+    margin: 30px;
+}
+
+
+#con4{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.t4{
+    width: 100px;
+    font-size: 40px;
+    margin: 80px;
+}
+.c4{
+    font-size: 30px;
+    margin: 30px;
+}
+
+
+#con5{
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.t5{
+    width: 100px;
+    font-size: 40px;
+    margin: 80px;
+}
+.c5{
+    font-size: 30px;
+    margin: 30px;
+}
+
+
+#con6{
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.t6{
+    width: 100px;
+    font-size: 40px;
+    margin: 80px;
+}
+.c6{
+    font-size: 30px;
+    margin: 30px;
+}
+
+
+.fh{
+    width: 150px;
+    height: 70px;
+    background-color: rgb(245, 231, 247);
+    border-radius: 50%;
+    box-shadow: 3px 3px lightgray;
+    margin-left: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fh>span{
+    font-size: 30px;
+    font-family: STXingKai;
+}
+
+
