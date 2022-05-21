@@ -1,0 +1,411 @@
+/* 初始化内外边框 */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* 弹性布局，文字居中，背景颜色 */
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#6e7cb6, #947d91);
+    height: 1900px;
+}
+
+/* 时间轴 */
+.sjz{
+    width: 1000px;
+    height: 1700px;
+    position: relative;
+    /* 相对定位 */
+    top: 100px;
+}
+
+.sjz::after{
+    content: "";
+    position: absolute;
+    /* 绝对定位 */
+    top: -100px;
+    left: 50%;
+    width: 5px;
+    z-index: -9999;
+    /* 放到最底层 */
+    height: 1900px;
+    /* 中轴线长度 */
+    background-color: rgba(255,255,255,0.5);
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* 均匀排列元素，首元素放起点，尾元素放终点 */
+}
+
+/* left1357有内容，但是不能舍弃right1357，否则不能保证时间轴居中 */
+/* 先敲左边的一列，再敲右边的一列吧！ */
+
+.left1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+
+.life_tg{
+    color: white;
+    font-size: 40px;
+    margin-top: 120px;
+    margin-left: 90px;
+    /* border: 1px solid red; */
+}
+
+.right1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+
+.left3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+.ts_img{
+    margin-left: -100px;
+    /* border: 1px solid red; */
+}
+.life_ts{
+    color: white;
+    font-size: 40px;
+    margin-top: 120px;
+    margin-left: 55px;
+    /* border: 1px solid red; */
+}
+
+
+.right3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+
+.left5{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+.bm_img{
+    margin: 40px;
+    margin-left: -120px;
+}
+.life_bm{
+    color: white;
+    font-size: 40px;
+    margin-top: 120px;
+    margin-left: 15px;
+    /* border: 1px solid red; */
+}
+
+
+.right5{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+
+.left7{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+.ywyw_img{
+    margin-left: -100px;
+    /* border: 1px solid red; */
+}
+.life_ywyw{
+    color: white;
+    font-size: 40px;
+    margin-top: 120px;
+    margin-left: 65px;
+    /* border: 1px solid red; */
+}
+
+
+.right7{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+/* 右边一列right246有内容 */
+
+.left2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+
+.life_ky{
+    color: white;
+    font-size: 40px;
+    margin-top: 120px;
+    margin-right: 60px;
+    /* border: 1px solid red; */
+}
+
+.ky_img{
+    margin-top: 30px;
+    margin-right: -80px;
+}
+
+.right2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+.left4{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+
+.life_hs{
+    color: white;
+    font-size: 40px;
+    margin-top: 120px;
+    margin-right: 50px;
+    /* border: 1px solid red; */
+}
+
+.hs_img{
+    margin-top: 10px;
+    margin-right: -90px;
+}
+
+.right4{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+.left6{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+
+.life_zyz{
+    color: white;
+    font-size: 40px;
+    margin-top: 120px;
+    margin-right: 60px;
+    /* border: 1px solid red; */
+}
+
+.zyz_img{
+    margin-top: 10px;
+    margin-right: -110px;
+}
+
+.right6{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    /* height: 70px; */
+    /* background-color: white; */
+    /* border-radius: 15px; */
+    /* color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+
+/* 页面范围内偶数的匹配元素 */
+/* 单数左 */
+.box:nth-child(odd) .left{
+    /* background-color: white; */
+    box-shadow: 0,0,10px, rgb(0, 0, 0, 0.3);
+}
+
+/* 页面范围内奇数的匹配元素 */
+/* 双数右 */
+.box:nth-child(even) .right{
+    /* background-color: white; */
+    box-shadow: 0,0,10px, rgb(0, 0, 0, 0.3);
+}
+
+/* 中间的时间 */
+.center_time{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_time > span{
+    /* 中间时间戳的框框 */
+    width: 100px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    background-color: #EFEDE7;
+}
+
+
+.tg_img:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0;
+}
+
+
+.ky_img:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0;
+}
+
+
+.ts_img:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0;
+}
+
+
+.hs_img:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0;
+}
+
+
+.bm_img:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0;
+}
+
+
+.zyz_img:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0;
+}
+
+
+.ywyw_img:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0;
+}
+
+
