@@ -1,0 +1,94 @@
+*{
+    /* 初始化边框 */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* 加了该属性后padding和border的值不影响元素宽高 */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* 隐藏溢出部分 */
+}
+
+#content{
+    background: linear-gradient(#1a1a20, #73769d);
+    /* display: flex;
+    justify-content: center; */
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    /* background-color: black; */
+}
+
+.curdate{
+    width: 100%;
+    height:400px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 110px;
+    font-weight: 800;
+    color: white;
+    position: relative;
+    /* border: 1px solid red; */
+
+}
+
+.cd_dash{
+    /* 调整横杠 */
+    margin: 0 15px;
+    transform: translateY(-10px);
+}
+
+.curtime{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    top: 36%;
+    /* border: 1px solid red; */
+    color: white;
+    font-size: 100px;
+    font-weight: 800;
+    /* border: 1px solid red; */
+}
+
+.ct_colon{
+    /* 调整冒号 */
+    margin: 0 15px;
+    transform: translateY(-10px);
+}
+
+#text{
+    background: linear-gradient(100deg, #7EA9E0, #9DBEE1, #DE9CB7);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.bottom{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow{
+    width: 300px;
+    /* height: 150px; */
+    /* border: 1px solid red; */
+    margin-top: -10px;
+}
+
+.arrow > img:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0;
+}
