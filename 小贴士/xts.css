@@ -6,8 +6,10 @@
 body{
     /* 去除横向滚动轴 */
     width: 100vw;
+    height: 2700px;
+    margin-top: -80px;
     overflow-x: hidden;
-    background: rgb(220, 199, 217);
+    background: linear-gradient(to bottom, rgb(220, 199, 217), white);
 }
 
 html,body{
@@ -18,7 +20,7 @@ html,body{
     /* 但此时是横向的box相连 */
     flex-direction: column;
     /* 改为竖直排列 */
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .box{
