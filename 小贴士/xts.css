@@ -155,9 +155,13 @@ html,body{
     justify-content: center;
     align-items: center;
 }
-.fh>span{
+.fh span{
     font-size: 30px;
     font-family: STXingKai;
+}
+.fh>a{
+    text-decoration: none;
+    /* 去除链接文字下划线 */
 }
 
 
