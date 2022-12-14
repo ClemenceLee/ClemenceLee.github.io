@@ -67,3 +67,7 @@
     justify-content: space-between;
 }
 
+.spotlight parallax bg-cover bg-size--cover{
+    background-size: cover;
+}
+
