@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    width: 100%;
+    height: 140px;
+    /* border: 1px solid black; */
+    border-bottom: 2px solid #ccc;
+    position: fixed;
+    z-index: 99;
+}
+
+.h_up{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid red; */
+    background-color: rgb(44, 47, 97);
+    /* opacity: 0.6; */
+    display: flex;
+}
+
+.h_down{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid chocolate; */
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    opacity: 0.6;
+}
+
+.h_down h3{
+    text-align: center;
+    margin-top: 25px;
+    color: rgb(22, 22, 82);
+}
+
+.a1{
+    width: 110px;
+    height: 50px;
+    margin: 15px;
+    margin-right: 30px;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+    display: float;
+    /* border-radius: 10px;
+    background: rgb(0,0,0,0.2);
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.3); */
+}
+
+.a1:hover{
+    border-radius: 10px;
+    background: rgb(0,0,0,0.1);
+    /* box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.2); */
+}
+
+.a1>h3{
+    margin-top: 10px;
+}
+
+
+.a2{
+    width: 110px;
+    height: 50px;
+    margin: 15px;
+    margin-right: 30px;
+    margin-top: 30px;
+    display: float;
+
+}
+
+.a2:hover{
+    border-radius: 10px;
+    background: rgb(0,0,0,0.1);
+}
+
+.a2>h3{
+    margin-top: 10px;
+}
+
+
+.a3{
+    width: 110px;
+    height: 50px;
+    margin: 15px;
+    margin-right: 10px;
+    margin-top: 30px;
+    display: float;
+}
+
+.a3:hover{
+    border-radius: 10px;
+    background: rgb(0,0,0,0.1);
+}
+
+.a3>h3{
+    margin-top: 10px;
+}
+
+
+.a4{
+    width: 110px;
+    height: 50px;
+    margin: 15px;
+    margin-right: 30px;
+    margin-top: 30px;
+    display: float;
+}
+
+.a4:hover{
+    border-radius: 10px;
+    background: rgb(0,0,0,0.1);
+
+}
+
+.a4>h3{
+    margin-top: 10px;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+.shell{
+    height: 100vh;
+    overflow-x: hidden;
+    /* 裁剪掉x的滚动条 */
+    perspective: 3px;
+    /* 透视 */
+}
+.shell div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: 30px;
+    letter-spacing: 2px;
+}
+.box{
+    transform: translateZ(-1px) scale(1.4);
+    /* 在3D空间，沿z轴后退一个像素，再放大1.6倍 */
+    background-size: cover;
+    height: 110vh;
+    z-index: -1;
+}
+.text{
+    height: 50vh;
+    background-color: #fff;
+}
+.text h1{
+    color: #000;
+}
+.heading{
+    z-index: -1;
+    transform: translateY(-30vh) translateZ(1px);
+    color: #fff;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
